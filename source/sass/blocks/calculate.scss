@@ -1,0 +1,44 @@
+.calculate {
+  background: url("../img/phone.png")no-repeat 40px 340px,
+  url("../img/bg.png")no-repeat 0 225px;
+  background-color: $romance;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  padding-top: 46px;
+  max-width: 1212px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.calculate__wrapper {
+  display: flex;
+}
+
+.calculate__title {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 28px;
+  max-width: 548px;
+  margin-left: 302px;
+  margin-bottom: 36px;
+
+  span {
+    font-weight: 500;
+  }
+}
+
+.calculate__form {
+  margin-bottom: 65px;
+}
+
+.calculate__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 45px 54px;
+}
+
+.calculate__footer-link {
+  font-size: 18px;
+  color: $silver;
+}

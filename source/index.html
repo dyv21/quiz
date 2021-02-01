@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Лайк мебель - Изготавливаем и устанавливаем кухни в Москве и области с 2004 года</title>
+    <meta name="description" content="Современные Комфортные Кухни с пожизненной гарантией " />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="preload" href="fonts/Museo-Sans-Cyrl-300.woff2" as="font" type="font/woff2" crossorigin />
+  </head>
+  <body class="body">
+    <header class="header container">
+      <div class="logo">
+        <a href="/" class="logo__link">
+          <img src="img/logo.svg" alt="Лайк мебель" width="274" height="39" />
+        </a>
+        <p class="logo__text">
+          Изготавливаем и устанавливаем <br />
+          кухни в Москве и области с 2004 года
+        </p>
+      </div>
+      <div class="phone">
+        <a href="tel:+79955085117" class="phone__link">+7 (995) 508-51-17</a>
+        <p class="phone__status">сейчас работаем</p>
+      </div>
+    </header>
+    <main class="main container">
+      <section class="promo">
+        <h1 class="promo__title">
+          Современные Комфортные Кухни <br />
+          <span>с пожизненной гарантией</span>
+        </h1>
+        <div class="trends">
+          <h2 class="trends__title">Тренды дизайна кухни 2020 г.</h2>
+          <div class="trends__wrapper">
+            <img class="trends__img" src="img/kitchen.png" alt="Кухня" width="182" height="251" />
+            <ul class="trends__list">
+              <li class="trends__item">Максимальное использование пространства и простота в уходе</li>
+              <li class="trends__item">Гладкие, ровные поверхности без ручек</li>
+              <li class="trends__item">
+                «Умные»‎ материалы фасадов — <br />
+                нет отпечатков и царапин
+              </li>
+            </ul>
+          </div>
+          <div class="sale">
+            <h3 class="sale__title"><span>Акция!</span> В честь 16-летия фабрики Скидки до 30% до 5 октября</h3>
+            <p class="sale__text">
+              Рассчитайте стоимость вашей кухни в 3-х комплектациях: «Эксклюзивная»‎, «Богатая»‎ и «Хорошая»‎ — <br />
+              и зафиксируйте <a href="#" class="sale__link">цену по акции</a>
+            </p>
+            <a href="#calculate" class="btn sale__btn">Рассчитайте стоимость <span>за 2 минуты</span></a>
+          </div>
+        </div>
+      </section>
+      <section class="calculate" id="calculate">
+        <h2 class="calculate__title">
+          Рассчитайте стоимость вашей кухни в 3-х комплектациях:
+          <span>«Эксклюзивная»‎, «Богатая»‎ и «Хорошая»‎</span>
+        </h2>
+        <div class="progres-bar">
+          <div class="progres-bar__line">
+            <p class="progres-bar__text">1 из 6</p>
+          </div>
+        </div>
+        <div class="calculate__form">
+          <h3 class="form__title">Мы уже приступили к расчёту стоимости кухни!</h3>
+          <div class="calculate__wrapper">
+            <form action="#" method="post" class="form">
+              <fieldset class="form__fieldset">
+                <legend class="form__legend">Как вам удобнее получить результат?</legend>
+                <ul class="result-list">
+                  <li class="result-list__item">
+                    <input class="result-list__input visually-hidden" type="radio" name="result" id="whatsApp" value="whatsApp" />
+                    <label class="result-list__label" for="whatsApp">Пришлите расчет в WhatsApp</label>
+                  </li>
+                  <li class="result-list__item">
+                    <input class="result-list__input visually-hidden" type="radio" name="result" id="sms" value="sms" />
+                    <label class="result-list__label" for="sms">Пришлите расчет ссылкой в SMS </label>
+                  </li>
+                  <li class="result-list__item">
+                    <input class="result-list__input visually-hidden" type="radio" name="result" id="callback" value="callback" checked />
+                    <label class="result-list__label" for="callback">Перезвоните, у меня остались вопросы</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="form__fieldset number">
+                <label class="number__label" for="user-phone"><span>Введите номер телефона и получите расчет кухни в 3-х комплектациях</span> </label>
+                <input
+                  class="number__input"
+                  type="tel"
+                  name="user-phone"
+                  id="user-phone"
+                  placeholder="_(___)___-__-__"
+                  pattern="[\+\0-9]+"
+                  title="Ведите номер в формате +7999000000"
+                  maxlength="12"
+                  required
+                />
+              </fieldset>
+              <button type="button" class="btn form__btn">Получить результат</button>
+            </form>
+            <div class="gift">
+              <h3 class="gift__title">Ваш подарок</h3>
+              <img class="gift__img" src="img/sink.jpg" alt="Кухоннай мойка" width="273" height="175" />
+              <div class="gift__info">
+                <h2 class="gift__info-title">Кухонная мойка</h2>
+                <p class="gift__surprise">
+                  <span>+ СЮРПРИЗ!</span> Петли <br />
+                  с доводчиками на всю кухню
+                </p>
+                <p class="gift__text">
+                  подарок будет забронирован <br />
+                  за вашим номером
+                </p>
+              </div>
+              <p class="gift__end">
+                Этот подарок вы получите, если <br />
+                закажете кухню у нас
+              </p>
+            </div>
+          </div>
+          <div class="progres-bar__round">
+            <div class="progres-bar__round-bar"></div>
+            <p class="progres-bar__end-text">
+              Стоимость кухни в 3-х комплектациях сформирована. <br />
+              <span>Она откроется сразу после регистрации</span>
+            </p>
+          </div>
+        </div>
+        <div class="calculate__footer">
+          <a href="#" class="calculate__footer-link">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a>
+          <a href="#" class="calculate__footer-link">Разработано в Quiz24.ru</a>
+        </div>
+      </section>
+      <section class="price">
+        <h2 class="price__title">Стоимость кухни в 3-х комплектациях</h2>
+      </section>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

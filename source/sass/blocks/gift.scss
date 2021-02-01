@@ -1,0 +1,88 @@
+.gift {
+  width: 273px;
+  margin-top: 6px;
+}
+
+.gift__title {
+  background-color: $tangerine-yellow;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 18px;
+  padding-top: 10px;
+  padding-bottom: 18px;
+  margin: 0;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background: url("../img/buyterfly.png") no-repeat;
+    width: 120px;
+    height: 120px;
+    right: -35px;
+    top: -45px;
+  }
+}
+
+
+.gift__info {
+  border-radius: 6px;
+  margin-top: -22px;
+  background-color: $tangerine;
+  padding: 0 12px;
+  padding-bottom: 10px;
+  margin-bottom: 17px;
+}
+
+.gift__info-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 18px;
+  color: $white;
+  padding: 10px 0;
+  margin-bottom: 0;
+}
+
+.gift__surprise {
+
+  background-color: $white;
+  font-size: 14px;
+  line-height: 18px;
+  border-radius: 6px;
+  color: $tangerine;
+  margin: 0;
+  padding: 8px 0 8px 42px;
+  text-align: left;
+  position: relative;
+
+  span  {
+    font-weight: 500;
+  }
+
+  &::before {
+    position: absolute;
+    top: 11px;
+    left: 10px;
+    width: 26px;
+    height: 30px;
+    content: "";
+    background: url("../img/gift.png") no-repeat;
+
+  }
+}
+.gift__text {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  color: $white;
+  margin-top: 5px;
+  margin-left: 18px;
+  margin-bottom: 0;
+  text-align: center;
+}
+.gift__end {
+  font-size: 12px;
+  line-height: 18px;
+}

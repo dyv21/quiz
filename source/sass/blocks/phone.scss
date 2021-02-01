@@ -1,0 +1,27 @@
+.phone {
+  text-align: right;
+}
+
+.phone__link {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+  color: $black;
+  margin: 0;
+}
+
+.phone__status {
+  font-size: 18px;
+  line-height: 18px;
+  margin: 0;
+
+  &::before {
+    display: inline-block;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: radial-gradient(50% 50% at 50% 50%, $screamin-green 0%, $forest-green 100%);
+    margin-right: 10px;
+  }
+}

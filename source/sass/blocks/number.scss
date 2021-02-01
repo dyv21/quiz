@@ -1,0 +1,32 @@
+.number {
+  padding-left: 9px;
+  margin-bottom: 19px;
+}
+
+.number__label {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+
+
+  span {
+    display: block;
+    padding-left: 80px;
+    margin: 0;
+    max-width: 360px;
+    margin-bottom: 50px;
+  }
+}
+
+.number__input {
+  width: 353px;
+  height: 64px;
+  background: $white;
+  border: 1px solid $safety-orange-three;
+  border-radius: 60px;
+  text-align: center;
+
+  &::placeholder {
+    color: $black;
+  }
+}

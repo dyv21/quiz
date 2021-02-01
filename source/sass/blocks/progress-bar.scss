@@ -1,0 +1,107 @@
+.progres-bar {
+  width: 592px;
+  height: 46px;
+  border-radius: 80px;
+  background-color: $white;
+  margin: 0 auto;
+  padding-top: 7px;
+  padding-left: 10px;
+  margin-bottom: 77px;
+}
+
+.progres-bar__line {
+  width: 306px;
+  height: 29px;
+  position: relative;
+  border-radius: 80px;
+  background: $safety-orange-three;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    left:0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      -45deg,
+      $white-60 25%,
+      transparent 0,
+      transparent 50%,
+      $white-60  0,
+      $white-60  75%,
+      transparent 0,
+      transparent);
+    background-size: 20px 20px;
+    animation: bar 2s linear infinite
+  }
+}
+
+@keyframes bar {
+  0% {
+      background-position: 20px 0
+  }
+
+  to {
+      background-position: 0 0
+  }
+}
+
+.progres-bar__text {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  color: $white;
+  margin: 0;
+}
+
+.progres-bar__round {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background: url("../img/icon-arrow-three.png") no-repeat;
+    width: 100px;
+    height: 120px;
+    right: 415px;
+    top: -98px;
+  }
+}
+
+.progres-bar__round-bar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 13px solid #FFC804;
+  margin-left: 615px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: 37px;
+    left: 32px;
+    content: "";
+    width: 29px;
+    height: 24px;
+    background: url("../img/icon-check-two.png") no-repeat;
+  }
+}
+
+.progres-bar__end-text {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 27px;
+  max-width: 600px;
+  margin-left: 370px;
+  margin-top: 25px;
+
+  span {
+    font-weight: 500;
+    margin-left: 10px;
+  }
+}

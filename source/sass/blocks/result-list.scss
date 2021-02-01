@@ -1,0 +1,48 @@
+.result-list {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  width: 450px;
+  margin-left: 12px;
+  margin-bottom: 19px;
+}
+
+.result-list__item {
+  margin-bottom: 17px;
+}
+
+.result-list__label {
+  font-weight: 300;
+  font-size: 20px;
+  padding-left: 30px;
+  position: relative;
+
+  &:hover {
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: -9px;
+    content: "";
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 1px solid $mango-tango;
+  }
+}
+
+.result-list__input:checked + .result-list__label{
+  &::after {
+    position: absolute;
+    left: -3.3px;
+    top: 6.1px;
+    content: "";
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: $mango-tango;
+  }
+}
