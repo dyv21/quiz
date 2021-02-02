@@ -66,7 +66,7 @@
         <div class="calculate__form">
           <h3 class="form__title">Мы уже приступили к расчёту стоимости кухни!</h3>
           <div class="calculate__wrapper">
-            <form action="#" method="post" class="form">
+            <form action="https://formspree.io/f/mleovjjr" method="POST" class="form">
               <fieldset class="form__fieldset">
                 <legend class="form__legend">Как вам удобнее получить результат?</legend>
                 <ul class="result-list">
@@ -86,19 +86,9 @@
               </fieldset>
               <fieldset class="form__fieldset number">
                 <label class="number__label" for="user-phone"><span>Введите номер телефона и получите расчет кухни в 3-х комплектациях</span> </label>
-                <input
-                  class="number__input"
-                  type="tel"
-                  name="user-phone"
-                  id="user-phone"
-                  placeholder="_(___)___-__-__"
-                  pattern="[\+\0-9]+"
-                  title="Ведите номер в формате +7999000000"
-                  maxlength="12"
-                  required
-                />
+                <input class="number__input" type="tel" name="user-phone" id="user-phone" value="_(___) ___-__-__" required />
               </fieldset>
-              <button type="button" class="btn form__btn">Получить результат</button>
+              <button type="submit" class="btn form__btn">Получить результат</button>
             </form>
             <div class="gift">
               <h3 class="gift__title">Ваш подарок</h3>
@@ -121,7 +111,15 @@
             </div>
           </div>
           <div class="progres-bar__round">
-            <div class="progres-bar__round-bar"></div>
+            <div class="progres-bar__round-bar">
+              <svg class="progress-ring" width="120" height="120">
+                <circle class="progress-ring__circle" r="52" cx="60" cy="60" />
+                <path
+                  class="progress-ring__check"
+                  d="M69.8048 47.6238C68.8587 47.6238 67.9694 48.0092 67.3002 48.7088L54.194 62.4296L50.7009 58.7789C50.0321 58.0797 49.1429 57.6946 48.197 57.6946C47.251 57.6946 46.3618 58.0797 45.6928 58.7787C45.0241 59.4777 44.6559 60.4072 44.6559 61.3958C44.6559 62.3844 45.0241 63.3138 45.6928 64.0126L51.6906 70.2815C52.3594 70.9806 53.2486 71.3658 54.1946 71.3658C55.1402 71.3658 56.0297 70.9805 56.6993 70.2808L72.3088 53.9423C73.6892 52.4991 73.6891 50.1509 72.3088 48.7077C71.64 48.0088 70.7507 47.6238 69.8048 47.6238Z"
+                />
+              </svg>
+            </div>
             <p class="progres-bar__end-text">
               Стоимость кухни в 3-х комплектациях сформирована. <br />
               <span>Она откроется сразу после регистрации</span>
@@ -137,7 +135,11 @@
         <h2 class="price__title">Стоимость кухни в 3-х комплектациях</h2>
       </section>
     </main>
-
+    <div class="modal">
+      <div class="modal__window">
+        <p class="form__status"></p>
+      </div>
+    </div>
     <script src="js/script.js"></script>
   </body>
 </html>

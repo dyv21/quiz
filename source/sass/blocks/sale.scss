@@ -18,9 +18,10 @@
   font-size: 22px;
   line-height: 26px;
   color: $safety-orange;
-  text-shadow: 0px 0px 20px $orange-peel;
   max-width: 400px;
   margin-bottom: 42px;
+  transition: 2s ease;
+  animation: blink 2s linear infinite;
 
   span {
     font-weight: 900;
@@ -67,5 +68,62 @@
     height: 80px;
     right: -163px;
     top: -26px;
+  }
+}
+
+
+@keyframes blink {
+  0% {
+      text-shadow:
+      0 0 5px #fff,
+      0 0 40px $orange-peel,
+      0 0 5px #fff,
+      0 0 40px $orange-peel,
+      0 0 5px #fff,
+      0 0 40px $orange-peel,
+      0 0 5px #fff,
+      0 0 40px $orange-peel
+  }
+
+  25% {
+      text-shadow:
+      0 0 5px #fff,
+      0 0 20px $orange-peel,
+      0 0 5px #fff,
+      0 0 20px $orange-peel,
+      0 0 5px #fff,
+      0 0 20px $orange-peel,
+      0 0 5px #fff,
+      0 0 20px $orange-peel
+  }
+
+  50% {
+      text-shadow:
+      0 0 5px #fff,
+      0 0 10px $orange-peel
+  }
+
+  75% {
+      text-shadow:
+      0 0 5px #fff,
+      0 0 20px $orange-peel,
+      0 0 5px #fff,
+      0 0 20px $orange-peel,
+      0 0 5px #fff,
+      0 0 20px $orange-peel,
+      0 0 5px #fff,
+      0 0 20px $orange-peel
+  }
+
+  to {
+      text-shadow:
+      0 0 5px #fff,
+      0 0 40px $orange-peel,
+      0 0 5px #fff,
+      0 0 40px $orange-peel,
+      0 0 5px #fff,
+      0 0 40px $orange-peel,
+      0 0 5px #fff,
+      0 0 40px $orange-peel
   }
 }

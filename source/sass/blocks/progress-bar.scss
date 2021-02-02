@@ -29,11 +29,11 @@
     height: 100%;
     background: linear-gradient(
       -45deg,
-      $white-60 25%,
-      transparent 0,
+      $white-40 25%,
+      transparent 25%,
       transparent 50%,
-      $white-60  0,
-      $white-60  75%,
+      $white-40  50%,
+      $white-40  75%,
       transparent 0,
       transparent);
     background-size: 20px 20px;
@@ -43,11 +43,11 @@
 
 @keyframes bar {
   0% {
-      background-position: 20px 0
+      background-position: 0 0;
   }
 
-  to {
-      background-position: 0 0
+  100% {
+      background-position: -20px 0;
   }
 }
 
@@ -58,6 +58,21 @@
   color: $white;
   margin: 0;
 }
+
+.progres-bar__end-text {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 27px;
+  max-width: 600px;
+  margin-left: 370px;
+  margin-top: 25px;
+
+  span {
+    font-weight: 500;
+    margin-left: 10px;
+  }
+}
+
 
 .progres-bar__round {
   position: relative;
@@ -74,34 +89,29 @@
 }
 
 .progres-bar__round-bar {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  border: 13px solid #FFC804;
-  margin-left: 615px;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  &::before {
-    position: absolute;
-    top: 37px;
-    left: 32px;
-    content: "";
-    width: 29px;
-    height: 24px;
-    background: url("../img/icon-check-two.png") no-repeat;
+
+  .progress-ring {
+    height: 120px;
+    width: 120px;
+  }
+
+  .progress-ring__circle {
+    fill: #fff;
+    stroke: $tangerine-yellow;
+    stroke-width: 13px;
+    stroke-dasharray: 10 20;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+    transition: stroke-dashoffset 3s;
+  }
+
+  .progress-ring__check {
+    fill: $tangerine-yellow;
+    display: none;
   }
 }
 
-.progres-bar__end-text {
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 27px;
-  max-width: 600px;
-  margin-left: 370px;
-  margin-top: 25px;
-
-  span {
-    font-weight: 500;
-    margin-left: 10px;
-  }
-}
